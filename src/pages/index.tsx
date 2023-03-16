@@ -38,7 +38,7 @@ export default function Home() {
       </Head>
       <div id="canvas-container" className={`hero ${texturina.className} h-full w-full`}>
         <Canvas className='bg-black' linear>
-          {stars.map(s => <Star position={[
+          {stars.map((s, _) => <Star position={[
             Math.random() * scatterScale - (scatterScale / 2), 
             Math.random() * scatterScale - (scatterScale / 2), 
             Math.random() * scatterScale * -1.25
